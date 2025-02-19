@@ -66,21 +66,23 @@ python stock_analysis.py
 - Apple's stock behavior was observed from 01/01/2024 - 01/31/2025
 - R-Squared (R²) and Mean Absolute Error (MAE) are indicators of the model's accuracy,
 - R-Squared (R²) shows how well the model predicts the data. 1 = perfect prediction. ours is 0.9899
-- MAE shows how much the predicted stock price differs from the actual stock price, so the lower the better 
+- MAE shows how much the predicted stock price differs from the actual stock price, so the lower the better
+- "Top predictive stock: EL" means the model predicts that the stock with the best performance will be Estée Lauder - The model thinks EL has the best potential based on provided data
+- Model looked at 270 days worth of historical stock prices to make its predictions
+
+<br/>
 
 <p align="left">
   <img src="./assets/screenshots/screenshot2.png" alt="Charts showing predicted vs actual stock behavior" width="600">
 </p>  
 
 **Top Graph**
-- Top graph shows Actual vs Predicted APPL Stock Price for the last 54 days
-- From 2024 - 2025
+- Top graph shows Actual vs Predicted APPL Stock Price over the selected time period (01/01/2024 - 01/31/2025)
 - Light blue: Actual APPL price 
 - Dark blue: Predicted APPL price 
 
-**Middle Graph**
-- Middle graph...
-
 **Bottom Graph**
-- Bottom graph...
+- These are the features that our model used to predict our target stock (in this case, APPL)
+- MSI is showing up as the most important feature because its stock price and data is strongly influencing the prediction of our target stock (APPL)
+- The model learned that MSI's stock movements are a good indicator for predicting our target stock (APPL).
 
