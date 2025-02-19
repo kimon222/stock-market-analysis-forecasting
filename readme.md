@@ -1,5 +1,7 @@
 # S&P Stock Price Analysis & Forecasting 
 
+![Penguin cartoon with stocks chart](./assets/stocks.gif)
+
 This project analyzes historical stock prices of S&P 500 companies and uses machine learning to predict future stock prices. The project utilizes Python, Pandas, Matplotlib, and the Random Forest algorithm to process and forecast stock data. The data is retrieved from Yahoo Finance and stored in an SQLite database for efficient querying and analysis.
 
 ## Features
