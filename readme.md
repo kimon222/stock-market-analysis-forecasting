@@ -5,11 +5,11 @@
 This project analyzes historical stock prices of S&P 500 companies and uses machine learning to predict future stock prices. The project utilizes Python, Pandas, Matplotlib, and the Random Forest algorithm to process and forecast stock data. The data is retrieved from Yahoo Finance and stored in an SQLite database for efficient querying and analysis.
 
 ## Features
-- Stock Data Retrieval: Fetches historical stock data for S&P 500 companies from the Yahoo Finance API.
-- Data Processing & Visualization: Cleans and visualizes stock price trends using Pandas and Matplotlib.
-- Machine Learning Model: Implements a Random Forest model to predict stock prices based on historical data.
-- Database Storage: Stores stock data in an SQLite database for efficient querying and storage.
-- Model Evaluation: Evaluates the model performance using Mean Absolute Error (MAE) and R-squared (R²).
+- **Stock Data Retrieval**: Fetches historical stock data for S&P 500 companies from the Yahoo Finance API.
+- **Data Processing & Visualization**: Cleans and visualizes stock price trends using Pandas and Matplotlib.
+- **Machine Learning Model**: Implements a Random Forest model to predict stock prices based on historical data.
+- **Database Storage**: Stores stock data in an SQLite database for efficient querying and storage.
+- **Model Evaluation**: Evaluates the model performance using Mean Absolute Error (MAE) and R-squared (R²).
 
 ## Requirements 
 - Python 3.x
@@ -36,20 +36,18 @@ pip3 install yfinance pandas numpy matplotlib scikit-learn
 python3 save_to_sql.py
 ```
 
-This will:
-- Fetch and cleans stock data.
-- Store data in SQLite database (sp500_stocks.db)
+- Fetches and cleans stock data.
+- Stores data in SQLite database (sp500_stocks.db)
 
 2. Run the stock analysis script:
 ```bash
 python stock_analysis.py
 ```
 
-This will:
-- Fetch historical stock data for S&P 500 companies.
-- Clean the data by handling any missing values.
-- Traning a Random Forest model to predict stock prices.
-- Visualize actual vs predicted stock prices.
+- Fetches historical stock data for S&P 500 companies.
+- Cleans the data by handling any missing values.
+- Trains a Random Forest model to predict stock prices.
+- Visualizes actual vs predicted stock prices.
 
 ## Files
 - `stock_analysis.py`: Main script for analyzing and forecasting stock prices using machine learning.
