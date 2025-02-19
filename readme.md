@@ -57,18 +57,29 @@ python stock_analysis.py
 - `sp500_stocks.db`: SQLite database containing stock price data.
 - `requirements.txt`: List of Python libraries required to run the project.
 
-## Demo
-Screenshot 1
-- Mean Abolute Error (MAE)
-- R-Squared (R²)
+## 📈 Demo
+<p align="left">
+  <img src="./assets/screenshots/screenshot1.png" alt="Analysis Summary for APPL" width="600">
+</p>  
+Explanation:
+- Apple's stock behavior was observed from 01/01/2024 - 01/31/2025
+- R-Squared (R²) and Mean Absolute Error (MAE) are indicators of the model's accuracy,
+- R-Squared (R²) shows how well the model predicts the data. 1 = perfect prediction. ours is 0.9899
+- MAE shows how much the predicted stock price differs from the actual stock price, so the lower the better 
 
-Screenshot 2
+<p align="left">
+  <img src="./assets/screenshots/screenshot2.png" alt="Charts showing predicted vs actual stock behavior" width="600">
+</p>  
+
+**Top Graph**
 - Top graph shows Actual vs Predicted APPL Stock Price for the last 54 days
 - From 2024 - 2025
 - Light blue: Actual APPL price 
 - Dark blue: Predicted APPL price 
 
+**Middle Graph**
 - Middle graph...
 
+**Bottom Graph**
 - Bottom graph...
 
