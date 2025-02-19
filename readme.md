@@ -4,12 +4,12 @@
 
 This project analyzes historical stock prices of S&P 500 companies and uses machine learning to predict future stock prices. The project utilizes Python, Pandas, Matplotlib, and the Random Forest algorithm to process and forecast stock data. The data is retrieved from Yahoo Finance and stored in an SQLite database for efficient querying and analysis.
 
-## Features
-- **Stock Data Retrieval**: Fetches historical stock data for S&P 500 companies from the Yahoo Finance API.
-- **Data Processing & Visualization**: Cleans and visualizes stock price trends using Pandas and Matplotlib.
-- **Machine Learning Model**: Implements a Random Forest model to predict stock prices based on historical data.
-- **Database Storage**: Stores stock data in an SQLite database for efficient querying and storage.
-- **Model Evaluation**: Evaluates the model performance using Mean Absolute Error (MAE) and R-squared (R²).
+## 💫 Features
+- **Stock Data Retrieval**: Fetches historical stock data for S&P 500 companies from the Yahoo Finance API
+- **Data Processing & Visualization**: Cleans and visualizes stock price trends using Pandas and Matplotlib
+- **Machine Learning Model**: Implements a Random Forest model to predict stock prices based on historical data
+- **Database Storage**: Stores stock data in an SQLite database for efficient querying and storage
+- **Model Evaluation**: Evaluates the model performance using Mean Absolute Error (MAE) and R-squared (R²)
 
 ## Requirements 
 - Python 3.x
@@ -30,7 +30,7 @@ git clone https://github.com/kimon222/stock-market-prediction.git
 pip3 install yfinance pandas numpy matplotlib scikit-learn
 ```
 
-## Usage 
+## How to use   
 1. Run the save to sql script:
 ```bash
 python3 save_to_sql.py
@@ -51,7 +51,7 @@ python stock_analysis.py
 - Trains a Random Forest model to predict stock prices.
 - Visualizes actual vs predicted stock prices.
 
-## Files
+## 📄 Files
 - `stock_analysis.py`: Main script for analyzing and forecasting stock prices using machine learning.
 - `save_to_sql.py`: Script for downloading stock data and saving it into an SQLite database.
 - `sp500_stocks.db`: SQLite database containing stock price data.
@@ -84,5 +84,4 @@ python stock_analysis.py
 **Bottom Graph**
 - These are the features that our model used to predict our target stock (in this case, APPL)
 - MSI is showing up as the most important feature because its stock price and data is strongly influencing the prediction of our target stock (APPL)
-- The model learned that MSI's stock movements are a good indicator for predicting our target stock (APPL).
-
+- The model learned that MSI's stock movements are a good indicator for predicting our target stock (APPL)
