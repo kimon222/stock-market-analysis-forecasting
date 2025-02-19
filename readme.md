@@ -39,6 +39,8 @@ python3 save_to_sql.py
 - Fetches and cleans stock data.
 - Stores data in SQLite database (sp500_stocks.db)
 
+---
+
 2. Run the stock analysis script:
 ```bash
 python stock_analysis.py
