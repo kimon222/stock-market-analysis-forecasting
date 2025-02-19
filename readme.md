@@ -82,6 +82,6 @@ python stock_analysis.py
 - Dark blue: Predicted APPL price 
 
 **Bottom Graph**
-- These are the features that our model used to predict our target stock (in this case, APPL)
-- MSI is showing up as the most important feature because its stock price and data is strongly influencing the prediction of our target stock (APPL)
+- These are the features (stocks) that our model used to predict our target stock (in this case, APPL)
+- MSI is showing up as the most important feature (stock) because its stock price and data is strongly influencing the prediction of our target stock (APPL)
 - The model learned that MSI's stock movements are a good indicator for predicting our target stock (APPL)
