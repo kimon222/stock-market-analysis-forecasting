@@ -61,7 +61,8 @@ python stock_analysis.py
 <p align="left">
   <img src="./assets/screenshots/screenshot1.png" alt="Analysis Summary for APPL" width="600">
 </p>  
-Explanation:
+
+**Explanation:**
 - Apple's stock behavior was observed from 01/01/2024 - 01/31/2025
 - R-Squared (R²) and Mean Absolute Error (MAE) are indicators of the model's accuracy,
 - R-Squared (R²) shows how well the model predicts the data. 1 = perfect prediction. ours is 0.9899
