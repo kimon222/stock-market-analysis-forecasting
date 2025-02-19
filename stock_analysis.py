@@ -150,48 +150,32 @@ if __name__ == "__main__":
     
     #converts predictions to series so we can plot it
     y_pred_series = pd.Series(y_pred, index=y_test.index)
-    
-    #getting last 60 days for a zoomed in view
-    days_to_show = min(60, len(y_test))
-    zoom_start = y_test.index[-days_to_show]
-    y_test_zoom = y_test.loc[zoom_start:]
-    y_pred_zoom = y_pred_series.loc[zoom_start:]
-    
+        
     #plotting
-    fig, axes = plt.subplots(3, 1, figsize=(9, 7))
+    fig, axes = plt.subplots(2, 1, figsize=(9, 7))
     
-    #plot - actual vs predicted - zoomed in
-    axes[0].plot(y_test_zoom.index, y_test_zoom, color='skyblue', label=f'Actual {target_stock} Price', linewidth=2)
-    axes[0].plot(y_pred_zoom.index, y_pred_zoom, color='midnightblue', label='Predicted Price', 
-                linestyle='--', linewidth=1.5, alpha=0.7)
-    axes[0].set_title(f'Actual vs Predicted {target_stock} Stock Price (Last {days_to_show} Days)', fontsize=14)
+    #plot 2 - all data 
+    axes[0].plot(y_test.index, y_test, color='skyblue', label=f'Actual {target_stock} Price', linewidth=2.5)
+    axes[0].plot(y_pred_series.index, y_pred_series, color='midnightblue', label='Predicted Price', 
+                linestyle='--', linewidth=2, alpha=0.7)
+    axes[0].set_title(f'Full Test Period: Actual vs Predicted {target_stock} Stock Price', fontsize=14)
     axes[0].set_xlabel('Date', fontsize=10)
     axes[0].set_ylabel('Price (USD)', fontsize=10)
     axes[0].legend()
     axes[0].grid(True, linestyle='--', alpha=0.5)
     
-    #plot 2 - all data 
-    axes[1].plot(y_test.index, y_test, color='skyblue', label=f'Actual {target_stock} Price', linewidth=1.5)
-    axes[1].plot(y_pred_series.index, y_pred_series, color='midnightblue', label='Predicted Price', 
-                linestyle='--', linewidth=1, alpha=0.7)
-    axes[1].set_title(f'Full Test Period: Actual vs Predicted {target_stock} Stock Price', fontsize=14)
-    axes[1].set_xlabel('Date', fontsize=10)
-    axes[1].set_ylabel('Price (USD)', fontsize=10)
-    axes[1].legend()
-    axes[1].grid(True, linestyle='--', alpha=0.5)
-    
     #plot 3 - feature importance 
     top_n_features = 10
     importance_data = feature_importance.head(top_n_features)
-    bars = axes[2].barh(importance_data['Feature'], importance_data['Importance'], color='lightseagreen')
-    axes[2].set_title(f'Top {top_n_features} Most Important Features for Prediction', fontsize=14)
-    axes[2].set_xlabel('Importance', fontsize=10)
-    axes[2].invert_yaxis()  # Display the highest importance at the top
+    bars = axes[1].barh(importance_data['Feature'], importance_data['Importance'], color='lightseagreen')
+    axes[1].set_title(f'Top {top_n_features} Most Important Features for Prediction', fontsize=14)
+    axes[1].set_xlabel('Importance', fontsize=10)
+    axes[1].invert_yaxis()  # Display the highest importance at the top
     
     #importance values added as text
     for bar in bars:
         width = bar.get_width()
-        axes[2].text(width + 0.002, bar.get_y() + bar.get_height()/2, 
+        axes[1].text(width + 0.002, bar.get_y() + bar.get_height()/2, 
                    f'{width:.4f}', ha='left', va='center')
     
     plt.tight_layout()
