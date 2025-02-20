@@ -81,9 +81,9 @@ python stock_analysis.py
 - Dark blue: Predicted APPL price 
 
 **Bottom Graph**
-- These are the features (stocks) that our machine learning model (more related to machine learning than finance) used to predict our target stock
-- MSI is showing up as the most important feature (stock) because its stock price and data is strongly influencing the machine learning model's predictions
+- These are the features (stocks) that our machine learning model used to predict our target stock (APPL)
+- MSI likely influences the model's predictions for AAPL because the model has learned that MSI's performance is a good indicator of AAPL's stock movement based on historical patterns.
 
-## Limitations and Ideas for Future Improvement 
+## ⚠️🌱 Limitations and Ideas for Future Improvement 
 - Traditional finance models use historical data to predict future data, rather than this project, which uses recent data to predict current data
 - Traditional finance models include multiple groups of variables in their analysis, for example: fundamental analysis variables (earnings per share (EPS), price to earning (P/E), revenue growth, etc), technical analysis (price trends, moving averages, volume, relative strength index (RSI), etc), macroeconomic factors (interest rates, inflation rates, GDP, etc), market sentiment & external factors (investor sentiment, geopolitical events, industry trends, etc), and common predictive models (discounted cash flow, capital asset pricing model, Monte Carlo simulations, etc).  
