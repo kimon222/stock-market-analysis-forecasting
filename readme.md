@@ -64,7 +64,7 @@ python stock_analysis.py
 **Explanation ^^**
 - Apple's stock behavior was observed from 01/01/2024 - 01/31/2025
 - R-Squared (R²) and Mean Absolute Error (MAE) are indicators of the model's accuracy,
-- R-Squared (R²) shows how well the model predicts the data. This model's prediction was highly accurate, but that is because the model is set up for success since it is trained on current data.
+- R-Squared (R²) shows how well the model predicts the data. This model's prediction was highly accurate, but that is because it's predicting data for the same time frame as it was trained on - instead of using previous data to predict future stock movements. 
 - MAE shows how much the predicted stock price differs from the actual stock price, so the lower the better
 - "Top predictive stock: EL" means the most accurate prediction was for the stock EL - Estée Lauder
 - Model looked at 270 days worth of historical stock prices to make its predictions
