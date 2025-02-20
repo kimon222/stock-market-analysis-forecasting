@@ -84,6 +84,10 @@ python stock_analysis.py
 - These are the features (stocks) that our machine learning model used to predict our target stock (APPL)
 - MSI likely influences the model's predictions for AAPL because the model has learned that MSI's performance is a good indicator of AAPL's stock movement based on historical patterns.
 
-## 🌱 Limitations & Ideas for Future Improvement 
+## 🌱 Limitations
 - Traditional finance models use historical data to predict future data, in contrast to this project, which uses recent data to predict current data
-- Traditional finance models include multiple groups of variables in their analysis, for example: fundamental analysis variables (earnings per share (EPS), price to earning (P/E), revenue growth, etc), technical analysis (price trends, moving averages, volume, relative strength index (RSI), etc), macroeconomic factors (interest rates, inflation rates, GDP, etc), market sentiment & external factors (investor sentiment, geopolitical events, industry trends, etc), and common predictive models (discounted cash flow, capital asset pricing model, Monte Carlo simulations, etc).  
+- Traditional finance models include multiple groups of variables in their analysis, for example: fundamental analysis variables (earnings per share (EPS), price to earning (P/E), revenue growth, etc), technical analysis (price trends, moving averages, volume, relative strength index (RSI), etc), macroeconomic factors (interest rates, inflation rates, GDP, etc), market sentiment & external factors (investor sentiment, geopolitical events, industry trends, etc), and common predictive models (discounted cash flow, capital asset pricing model, Monte Carlo simulations, etc), in contrast to this project, which mainly observes closing prices for stocks
+
+## 🌱 Ideas for Future Improvement
+- Convert this model to use historical data to predict future data, for example by training the model on stock movements from 2018-2023, and then using the model to predict how the stock will perform in 2025
+- Input more factors into the machine learning model, for example moving averages, volume, or even market sentiment, to enhance accuracy and reliability
