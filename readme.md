@@ -55,7 +55,6 @@ python stock_analysis.py
 - `stock_analysis.py`: Main script for analyzing and forecasting stock prices using machine learning.
 - `save_to_sql.py`: Script for downloading stock data and saving it into an SQLite database.
 - `sp500_stocks.db`: SQLite database containing stock price data.
-- `requirements.txt`: List of Python libraries required to run the project.
 
 ## 📈 Demo
 <p align="left">
