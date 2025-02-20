@@ -64,9 +64,9 @@ python stock_analysis.py
 **Explanation ^^**
 - Apple's stock behavior was observed from 01/01/2024 - 01/31/2025
 - R-Squared (R²) and Mean Absolute Error (MAE) are indicators of the model's accuracy,
-- R-Squared (R²) shows how well the model predicts the data. 1 = perfect prediction. ours is 0.9899
+- R-Squared (R²) shows how well the model predicts the data. This model's prediction was highly accurate, but that is because the model is set up for success since it is trained on current data.
 - MAE shows how much the predicted stock price differs from the actual stock price, so the lower the better
-- "Top predictive stock: EL" means the model predicts that the stock with the best performance will be Estée Lauder - The model thinks EL has the best potential based on provided data
+- "Top predictive stock: EL" means the most accurate prediction was for the stock EL - Estée Lauder
 - Model looked at 270 days worth of historical stock prices to make its predictions
 
 <br/>
@@ -81,6 +81,9 @@ python stock_analysis.py
 - Dark blue: Predicted APPL price 
 
 **Bottom Graph**
-- These are the features (stocks) that our model used to predict our target stock (in this case, APPL)
-- MSI is showing up as the most important feature (stock) because its stock price and data is strongly influencing the prediction of our target stock (APPL)
-- The model learned that MSI's stock movements are a good indicator for predicting our target stock (APPL)
+- These are the features (stocks) that our machine learning model (more related to machine learning than finance) used to predict our target stock
+- MSI is showing up as the most important feature (stock) because its stock price and data is strongly influencing the machine learning model's predictions
+
+## Limitations and Ideas for Future Improvement 
+- Traditional finance models use historical data to predict future data, rather than this project, which uses recent data to predict current data
+- Traditional finance models include multiple groups of variables in their analysis, for example: fundamental analysis variables (earnings per share (EPS), price to earning (P/E), revenue growth, etc), technical analysis (price trends, moving averages, volume, relative strength index (RSI), etc), macroeconomic factors (interest rates, inflation rates, GDP, etc), market sentiment & external factors (investor sentiment, geopolitical events, industry trends, etc), and common predictive models (discounted cash flow, capital asset pricing model, Monte Carlo simulations, etc).  
