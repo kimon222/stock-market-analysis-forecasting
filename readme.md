@@ -58,7 +58,7 @@ python stock_analysis.py
 
 ## 📈 Demo
 <p align="left">
-  <img src="./assets/screenshots/screenshot1.png" alt="Analysis Summary for APPL" width="600">
+  <img src="./assets/screenshots/analysissummary.png" alt="Analysis Summary for APPL" width="600">
 </p>  
 
 **Explanation ^^**
@@ -66,8 +66,6 @@ python stock_analysis.py
 - R-Squared (R²) and Mean Absolute Error (MAE) are indicators of the model's accuracy,
 - R-Squared (R²) shows how well the model predicts the data. This model's prediction was highly accurate, but that is because it's predicting data for the same time frame as it was trained on - instead of using previous data to predict future stock movements. 
 - MAE shows how much the predicted stock price differs from the actual stock price, so the lower the better
-- "Top predictive stock: EL" means the most accurate prediction was for the stock EL - Estée Lauder
-- Model looked at 270 days worth of historical stock prices to make its predictions
 
 <br/>
 
